@@ -1,0 +1,9 @@
+DROP TABLE "titles";
+
+CREATE TABLE "titles" (
+	id SERIAL PRIMARY KEY,
+	"title_id" VARCHAR(6) NOT NULL,
+	"title" VARCHAR(25)
+);
+
+SELECT * FROM "titles";

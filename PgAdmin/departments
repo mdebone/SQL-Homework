@@ -1,0 +1,10 @@
+DROP TABLE "departments";
+
+CREATE TABLE "departments" (
+	id SERIAL PRIMARY KEY,
+	"dept_no" VARCHAR(5) NOT NULL,
+	"dept_name" VARCHAR(20) NOT NULL
+);
+	
+SELECT * 
+FROM "departments"

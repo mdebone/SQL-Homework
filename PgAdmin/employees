@@ -1,0 +1,14 @@
+DROP TABLE "employees";
+
+CREATE TABLE "employees" (
+	id SERIAL PRIMARY KEY,
+	"emp_no" VARCHAR(7) NOT NULL,
+	"emp_title_id" VARCHAR(6) NOT NULL,
+	"birth_date" DATE NOT NULL,
+	"first_name" VARCHAR(55),
+	"last_name" VARCHAR(55),
+	"sex" VARCHAR(1) NOT NULL CHECK (sex in ('F','M')),
+	"hire_date" DATE NOT NULL	
+);
+
+SELECT * FROM "employees";

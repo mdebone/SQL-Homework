@@ -1,0 +1,11 @@
+DROP TABLE "salaries";
+
+CREATE TABLE "salaries" (
+	id SERIAL PRIMARY KEY,
+	"emp_no" VARCHAR(7) NOT NULL
+	"salary" INT
+);
+
+
+	
+SELECT * FROM "salaries"
