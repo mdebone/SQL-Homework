@@ -1,17 +1,14 @@
 DROP TABLE "departments";
 
 CREATE TABLE "departments" (
-	id SERIAL PRIMARY KEY,
+	"department_id" SERIAL NOT NULL,
 	"dept_no" VARCHAR(4) NOT NULL,
-	"dept_name" VARCHAR(18) NOT NULL
+	"dept_name" VARCHAR(18) NOT NULL,
+	PRIMARY KEY ("deparment_id")
 );
-
---ALTER TABLE "departments2"
---	ADD COLUMN "dept_id" SERIAL PRIMARY KEY;
 	
+SELECT * FROM "departments"
 
---INSERT INTO "departments2" ("dept_no", "dept_name")
---	VALUES ('d003','Human Resources');
-	
-SELECT * 
-FROM "departments"
+
+
+
