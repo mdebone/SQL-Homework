@@ -1,0 +1,4 @@
+SELECT * 
+	FROM employees
+	WHERE "first_name"
+	LIKE '___ __ __ __ __ __ _%';

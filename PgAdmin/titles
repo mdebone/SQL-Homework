@@ -2,8 +2,18 @@ DROP TABLE "titles";
 
 CREATE TABLE "titles" (
 	id SERIAL PRIMARY KEY,
-	"title_id" VARCHAR(6) NOT NULL,
-	"title" VARCHAR(25)
+	"emp_title_id" VARCHAR(5) NOT NULL,
+	"title" VARCHAR(20) NOT NULL
 );
+
+--INSERT INTO "titles2" ("emp_title_id", "title")
+--	VALUES ('s0001','Staff'),
+--			('s0002','Senior Staff'),
+-- ('e0001','Assistant Engineer'),
+-- ('e0002','Engineer'),
+-- ('e0003','Senior Engineer'),
+-- ('e0004','Technique Leader'),
+-- ('m0001','Manager');
+
 
 SELECT * FROM "titles";

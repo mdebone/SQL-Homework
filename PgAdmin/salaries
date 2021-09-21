@@ -2,9 +2,14 @@ DROP TABLE "salaries";
 
 CREATE TABLE "salaries" (
 	id SERIAL PRIMARY KEY,
-	"emp_no" VARCHAR(7) NOT NULL,
+	"emp_no" INT NOT NULL,
 	"salary" INT
 );
+
+--INSERT INTO "salaries2" ("emp_no", "salary")
+--	VALUES ('10010','72488'),
+--			('10011','42365'),
+--			('10012','40000');
 
 	
 SELECT * FROM "salaries";

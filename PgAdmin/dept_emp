@@ -1,0 +1,12 @@
+DROP TABLE "dept_emp";
+
+CREATE TABLE "dept_emp" (
+	id SERIAL PRIMARY KEY,
+	"emp_no" INT NOT NULL,
+	"dept_no" VARCHAR(4) NOT NULL
+);
+
+--INSERT INTO "dept_emp2" ("emp_no", "dept_no")
+--	VALUES ('10010','d006');
+	
+SELECT * FROM "dept_emp";

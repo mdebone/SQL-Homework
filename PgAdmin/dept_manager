@@ -2,8 +2,8 @@ DROP TABLE "dept_manager";
 
 CREATE TABLE "dept_manager" (
 	id SERIAL PRIMARY KEY,
-	"dept_no" VARCHAR(5) NOT NULL,
-	"emp_no" VARCHAR(7) NOT NULL
+	"dept_no" VARCHAR(4) NOT NULL,
+	"emp_no" INT NOT NULL
 );
 	
 SELECT * FROM "dept_manager";

@@ -2,13 +2,19 @@ DROP TABLE "employees";
 
 CREATE TABLE "employees" (
 	id SERIAL PRIMARY KEY,
-	"emp_no" VARCHAR(7) NOT NULL,
+	"emp_no" INT NOT NULL,
 	"emp_title_id" VARCHAR(6) NOT NULL,
 	"birth_date" DATE NOT NULL,
-	"first_name" VARCHAR(55),
-	"last_name" VARCHAR(55),
+	"first_name" VARCHAR(15),
+	"last_name" VARCHAR(16),
 	"sex" VARCHAR(1) NOT NULL CHECK (sex in ('F','M')),
 	"hire_date" DATE NOT NULL	
 );
+
+--INSERT INTO "employees2" ("emp_no", "emp_title_id", "birth_date", "first_name", "last_name", "sex", "hire_date")
+--	VALUES ('205246','s0002','11/25/1958','Nevio','Demizu','F','5/18/1986'),
+--		('476443','s0001','8/27/1952','Ziya','Asmuth','M','8/24/1995'),
+--		('424270','s0001','1/15/1963','Kellyn','Yoshizawa','F','5/8/1995');
+
 
 SELECT * FROM "employees";
